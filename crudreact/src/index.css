@@ -1,0 +1,20 @@
+.thead-dark th{
+  
+    color: white;
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.nav-background {
+ 
+  background-color: darkblue;
+}
+.mt-img {
+  margin-left: 1rem;
+}
+
+.view-item {
+  width: 25px;
+  height: 25px;
+  margin-left: 1rem;
+}
