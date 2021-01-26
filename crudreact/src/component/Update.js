@@ -19,7 +19,6 @@ function Update(props) {
         if (data) {
             const body = { user_name: data.username, email: data.email }
             const result = await axios.patch(BASE_URL + '/' + id, body);
-           // console.log(result.data);
             alert(result.data.message);
         }
     }
@@ -30,8 +29,9 @@ function Update(props) {
             <div className="w-75 auto  p-5">
                 <h2 className="text-center mb-4">Update User</h2>
                 <h2 className="text-center mt-2"> User : {id}</h2>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form  onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-group">
+                       
                         <input className="form-control"
                             type="text"
                             id="name"

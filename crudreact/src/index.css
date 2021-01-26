@@ -18,3 +18,46 @@
   height: 25px;
   margin-left: 1rem;
 }
+
+.center_div {
+  margin: 0 auto;
+  width:50% /* value of your choice which suits your alignment */
+}
+
+.card-w {
+  width: 10px;
+}
+
+.btn-product {
+  height: 40px;
+  width: 200px;
+  border-radius: 5%;
+  background-color: rgb(43, 226, 58);
+  color: red;
+  border: 2px solid red;
+  
+}
+
+.form-product {
+     background-color: sandybrown;
+}
+
+
+.margin-top {
+  margin-top: calc(50vh - 200px);
+}
+
+.image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,255,255, 0.5);
+  transition: all .3s linear;
+}
+.image-holder:hover:before { 
+  background: none;
+}

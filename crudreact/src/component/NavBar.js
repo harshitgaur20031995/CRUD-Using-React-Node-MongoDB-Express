@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Add from './icons/add.svg'
+import { ReactImageTint } from 'react-image-tint'
 
 function NavBar() {
     return (
@@ -8,6 +11,15 @@ function NavBar() {
             <div className="container">
                 <a className="navbar-brand"
                     href="/">Harshit Gaur</a>
+
+                <div className="right">
+                    <Link to={`/product`}>
+
+                        <ReactImageTint className=""
+                            src={Add} color="#FF404C"
+                            alt="dd"></ReactImageTint>
+                    </Link>
+                </div>
                 {/* <button className="navbar-toggler" type="button"
                     data-toggle="collapse"
                     data-target="#navbarSupportedContent"
@@ -55,7 +67,7 @@ function NavBar() {
                     </ul>
 
                 </div> */}
-               
+
             </div>
         </nav>
 
